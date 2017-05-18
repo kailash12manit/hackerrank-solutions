@@ -1,22 +1,19 @@
 /**
  * 
  */
-package hackerrank;
-
+//package hackerrank;
 import java.util.Scanner;
-
 /**
  * @author kailash
  *
  */
 public class BetweenTwoSets {
-
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-	 Scanner in = new Scanner(System.in);
+     public static void main(String[] args) {
+     // TODO Auto-generated method stub
+     Scanner in = new Scanner(System.in);
      int n = in.nextInt();
      int[] a = new int[n];
 
@@ -54,24 +51,23 @@ public class BetweenTwoSets {
      }
 
      System.out.println(count);
- }
+  }
 
- public static boolean isSetAFactor(int x, int[] a){
+  public static boolean isSetAFactor(int x, int[] a){
      for(int i : a){
          if((x % i) != 0){
              return false;
          }
      }
      return true;
- }
+  }
 
- public static boolean isFactorOfSet(int x, int[] a){
+  public static boolean isFactorOfSet(int x, int[] a){
      for(int i : a){
          if((i % x) != 0){
              return false;
          }
      }
      return true;
- }
-
+  }
 }
